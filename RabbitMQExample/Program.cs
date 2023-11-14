@@ -15,7 +15,7 @@ channel.QueueDeclare(queue: "hello",
          autoDelete: false,
          arguments: null);
 
-var message = "Hello thang map";
+var message = "Hello guy";
 
 var body = Encoding.UTF8.GetBytes(message);
 

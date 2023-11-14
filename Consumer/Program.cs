@@ -23,7 +23,7 @@ consumer.Received += (model, ea) =>
 {
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
-    Console.WriteLine($" [x] Received {message} nhan duoc roi");
+    Console.WriteLine($" [x] Received {message}");
 };
 channel.BasicConsume(queue: "hello",
                      autoAck: true,
